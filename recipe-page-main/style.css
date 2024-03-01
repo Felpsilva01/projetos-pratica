@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/*Fontes: Young Serif400  e Outfit400 600 700 */
+
+:root {
+    --primaria: hsl(14, 45%, 36%);
+    --primaria00:  hsl(332, 51%, 32%);
+    --cor00: hsl(0, 0%, 100);
+    --cor01: hsl(330, 100%, 98%);
+    --cor02: hsl(30, 54%, 90%);
+    --cor03: hsl(30, 18%, 87%);
+    --cor04: hsl(30, 10%, 34%);
+    --cor05: hsl(24, 5%, 18%);
+    --fonteTitulo: 'Young Serif', sans-serif;
+    --fontePadrao: 'Outfit', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    line-height: 2em;
+}
+
+body {
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+    background-color: var(--cor03);
+}
+
+main {
+    background-color: white;
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 25px auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--fonteTitulo);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+section {
+    margin: 25px 50px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+article{
+    background-color: var(--cor01);
+    padding: 35px;
+}
+
+h3 {
+    color: var(--primaria00);
+}
+
+h2 {
+    color: var(--primaria);
+}
+
+section > ol > li {
+    margin-bottom: 15px;
+}
