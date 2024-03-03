@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --amarelo: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --fontePadrao: "Figtree", sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    background-color: var(--amarelo);
+    font-family: var(--fontePadrao);
+}
+
+main{
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 1px black;
+    max-width: 450px;
+    min-width: 400px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner > img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.609);
+
+}
+
+.sub-tag {
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 30px;
+
+    border-radius: 5px;
+    background-color: var(--amarelo);
+    color: black;
+    font-weight: 900;
+}
+
+#tag__date {
+    margin-left: 30px;
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+.titulo__conteudo {
+    font-weight: 900;
+    margin-left: 30px;
+}
+
+.conteudo__texto {
+    color: var(--Grey);
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.creditos {
+    display: flex;
+    justify-content: left;
+    margin: 0px 30px;
+}
+
+.creditos > img {
+    width: 5vh;
+    height: 5vh;
+}
+
+.creditos > h4 {
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: 900;
+    padding-left: 20px;
+} 
