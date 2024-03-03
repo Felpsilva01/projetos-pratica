@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* primarias */
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    /* gradientes */
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    --VioletblueCircle: hsla(256, 72%, 46%, 1);
+    --PersianblueCircle: hsla(241, 72%, 46%, 0);
+    /* neutros */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    /* Tipografia 18px */
+    --fontePadrao: "Hanken Grotesk", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fontePadrao);
+}
+
+body {
+    height: 100vh;
+    background: var(--Paleblue) url(https://static.vecteezy.com/ti/vetor-gratis/p3/5368219-classico-minimalista-fundo-forma-abstrato-moderno-universal-modelos-graficos-padrao-de-elementos-abstratos-em-cores-soft-para-poster-e-fundo-vetor.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    background-color: var(--White);
+    width: 70%;
+    height: 70%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+article {
+    background-color: var(--White);
+    width: 50%;
+    height: 70%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    border-radius: 30px;
+
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+#conteudo__esquerda {
+    display: flex;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--Lightslateblue), var(--Lightroyalblue));
+    width: 50%;
+    border-radius: 30px;
+
+}
+
+#conteudo__esquerda__itens {    
+    margin: 10% auto;
+    text-align: center;
+}
+
+h1 {
+    color: var(--Lightlavender);
+}
+
+.circulo {
+    display: inline;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--PersianblueCircle), var(--VioletblueCircle));
+}
