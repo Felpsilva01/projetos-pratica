@@ -4,7 +4,7 @@
 :root {
 
     /* primarias */
-    --Lightred: hsl(0, 100%, 67%);
+    --Lightred: rgba(255, 87, 87, 0.3);
     --Orangeyyellow: hsl(39, 100%, 56%);
     --Greenteal: hsl(166, 100%, 37%);
     --Cobaltblue: hsl(234, 85%, 45%);
@@ -48,7 +48,7 @@ main {
 article {
     background-color: var(--White);
     width: 50%;
-    height: 70%;
+    height: 65%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
     border-radius: 30px;
 
@@ -62,7 +62,7 @@ article {
 #conteudo__esquerda {
     display: flex;
     color: white;
-    background-image: linear-gradient(to bottom, var(--Lightslateblue), var(--Lightroyalblue));
+    background-image: linear-gradient(to bottom, var(--Lightslateblue) 1%, var(--Lightroyalblue) 99%);
     width: 50%;
     border-radius: 30px;
 
@@ -78,7 +78,110 @@ h1 {
 }
 
 .circulo {
-    display: inline;
+    margin: 25px auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom, var(--PersianblueCircle), var(--VioletblueCircle));
+    background-image: linear-gradient(to bottom, var(--VioletblueCircle), var(--PersianblueCircle));
+    box-shadow: 0px 0px 1px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#numeroPrincipal {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+#numeroSecundario {
+    color: var(--Lightlavender);
+}
+
+.conteudo__esquerda__texto {
+    color: var(--Lightlavender);
+    font-size: 0.9em;
+    padding-top: 10%;
+    width: 85%;
+    margin: auto;
+}
+
+#conteudo__direita {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#conteudo__direita > h2 {
+    margin-bottom: 20px;
+}
+
+#conteudo__direita > p {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+img {
+    padding-right: 10px;
+}
+
+.numeros {
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+#vermelho {
+    color: hsl(0, 100%, 49%);
+    font-weight: bold;
+}
+
+#reaction{
+    background-color: var(--Lightred);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.3);
+}
+
+#amarelo {
+    color: var(--Orangeyyellow);
+    font-weight: bold;
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.3);
+}
+
+#verde{
+    color: var(--Greenteal);
+    font-weight: 900;
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.3);
+}
+
+#azul {
+    color: var(--Cobaltblue);
+    font-weight: bold;
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--Darkgrayblue);
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+a:hover {
+    background-color: var(--Lightroyalblue);
 }
